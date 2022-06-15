@@ -31,4 +31,6 @@ export default () =>
 
       // Log
       S.listItem().title('Journal').child(S.documentTypeList('journal').title('Journal')),
+      S.divider(),
+      S.listItem().title('Contact').child(S.editor().id('contact').schemaType('contact').documentId('singleton-contact').views(getPreview('contact'))),
     ]);
